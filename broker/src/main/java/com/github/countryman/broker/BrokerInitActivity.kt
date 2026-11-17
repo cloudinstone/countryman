@@ -1,15 +1,15 @@
 package com.github.countryman.broker
 
+import android.app.Activity
 import android.content.pm.PackageManager
 import android.os.Bundle
 import android.view.Gravity
 import android.widget.LinearLayout
 import android.widget.TextView
 import android.widget.Toast
-import androidx.activity.ComponentActivity
 import rikka.shizuku.Shizuku
 
-class BrokerInitActivity : ComponentActivity() {
+class BrokerInitActivity : Activity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(buildContent())
